@@ -5,3 +5,6 @@
 **/*.py[cod]
 api/.venv
 objects/*.txt
+# The Docker build copies the already-unpacked objects/ tree (deploy.sh unpacks
+# it); the compressed archive itself does not belong in the build context.
+objects.tar.xz
